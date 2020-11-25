@@ -1,5 +1,5 @@
 /* Regole css generali */
-body{ font-family: Arial sans-serif;
+body{ font-family: Sailec-Regular,"system-ui",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,"sans-serif";
   font-size:16px;
 }
 
@@ -108,24 +108,45 @@ height:40px; */
 border-left:3px solid #ccc;
 }
 .deploy ul{
-  padding-left:8px;
+  padding-left:0px;
 }
+
+.deploy h3{
+font-weight: bolder;
+}
+.deploy ul li,.deploy p{
+opacity:0.7;
+}
+
 .deploy ul li{
   line-height: 3;
 }
+.deploy ul li a{
+padding:15px 15px;
+border-left: 3px solid #ccc;
+text-decoration: none;
+}
 
+ .deploy ul li a:hover {
+border-color:blue;
+color:darkblue;
+}
 
+/* .carousel-up */
 .carousel-up,.carousel-down{
 background-color: #eee;
 }
-
+.carousel-up{
+background-color: #f1f3f8;}
 
 .carousel-up img{
 width:500px;
 height:auto;
 margin:0 20px;
 }
-
+.carousel-up ul{
+  padding:0;
+}
 .carousel-content{
 width:500px;
 margin:0 auto;
@@ -175,7 +196,7 @@ font-size:30px;}
 
       .circle::before{font-family: FontAwesome ; font-weight: 900; content: "\f1db ";
     }
-    li:hover   .circle::before {font-family: FontAwesome ; font-weight: 900; content: "\f111 ";
+    .cerchietti li:hover   .circle::before {font-family: FontAwesome ; font-weight: 900; content: "\f111 ";
   }
 
   .get-started,.gradient

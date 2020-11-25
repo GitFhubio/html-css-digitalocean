@@ -34,8 +34,9 @@ ul{list-style: none;}
     left: 50%;}
 
 .logo{
-  width:100px;
+  width:140px;
   height:auto;
+  margin-right: 50px;
 }
  .navbar{
   margin-bottom:0px;
@@ -50,6 +51,14 @@ ul{list-style: none;}
 
     .navbar-default .navbar-toggle .icon-bar {
     background-color: #3A7FFF}
+.nav > li > a{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.nav .btn-default {
+    color: #3A7FFF;
+    border-color: #3A7FFF;}
 
     .jumbotron{
 

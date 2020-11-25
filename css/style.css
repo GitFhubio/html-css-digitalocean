@@ -78,6 +78,40 @@ ul{list-style: none;}
 .lista{
 border-left:1px solid #ccc;
 }
+.carousel{
+background-color: #eee;
+}
+
+
+.carousel img{
+width:500px;
+height:auto;
+margin:0 5px;
+}
+
+.carousel li::before
+{
+}
+.gradient,.get-started{
+
+  background-color: darkblue;
+}
+
+.test-speed{
+  width:100%;
+  height:25px;
+  border-bottom:1px solid #ccc;
+}
+
+.footer{
+background-color: black;
+color:white;
+}
+
+.iconesocial li{
+  display:inline-block;
+}
+
 
     /* Extra Small Devices, Phones */
     @media screen and (min-width : 480px) {

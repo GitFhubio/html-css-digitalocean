@@ -160,11 +160,13 @@ background-color: #eee;
 background-color: #f1f3f8;
 padding:50px 0;
 }
-
+.carousel-up p {
+  padding-bottom:80px;
+}
 .carousel-up img{
 width:80%;
 height:auto;
-margin:100px 20px 0px 20px;
+margin:0 20px;
 }
 .carousel-up ul{
   margin-top:50px;

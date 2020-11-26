@@ -27,9 +27,11 @@ color:#455780;}
 .small-text{font-size:14px;}
 
 ul{list-style: none;}
-
-/* a{text-decoration:none;
-color:#fff;} */
+.azzurro{
+  background-color: #5492FF;
+  border-color:#5492FF;
+  color:#fff;
+  }
 
 .logo{
   width:160px;
@@ -81,12 +83,6 @@ color:#fff;} */
     padding:30px 20px;
 
 }
-
-.azzurro{
-        background-color: #5492FF;
-        border-color:#5492FF;
-        color:#fff;
-      }
 
   .jumbotron h4{
     padding-top: 8px;
@@ -408,9 +404,9 @@ left:20px;
     width:180px;
   }
 
-/* faccio una media query speciale laddove si rompe la  nav di bootstrap */
+ /* faccio una media query speciale laddove si rompe la  nav di bootstrap */
 
-  /* @media (min-width: 768px) and (max-width: 991px) {
+ @media (min-width: 768px) and (max-width: 991px) {
     .navbar-collapse.collapse {
         display: none !important;
     }
@@ -423,8 +419,7 @@ left:20px;
     .navbar-header {
         float:none;
     }
-} */
-
+}
   /* Medium Devices, Desktops */
   @media screen and (min-width : 992px) {
 

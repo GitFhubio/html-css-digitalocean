@@ -13,7 +13,9 @@ a{
 .white{
   color:#fff;
 }
-
+.opaco{
+  opacity:0.7;
+}
 .big-text{font-size:70px;}
 .main-text{font-size:55px;}
 .med-text{font-size:40px;}
@@ -28,9 +30,11 @@ ul{list-style: none;}
 color:#fff;} */
 
 .logo{
-  width:140px;
+  width:160px;
   height:auto;
   margin-right: 50px;
+  position:relative;
+  bottom:5px;
 }
 
 /* nav */
@@ -60,8 +64,9 @@ color:#fff;} */
 
     padding-top:40px;
     background-image: url("../img/sfondo-pesci.svg");
+    background-size:160%;
     margin-bottom:0px;
-
+    background-position: 50% 70%;
   }
 /* jumbotron */
 .jumbotron .titolo p{
@@ -94,7 +99,7 @@ color:#fff;} */
 }
 .immagini{
 background-color: #f1f3f8;
-padding:20px 0;
+padding:35px 0;
 }
 .immagini img{
 
@@ -105,12 +110,21 @@ height:40px; */
 .immagini span{
   color:#687596;
 }
+.loghi{
+margin-top:20px;
+}
 
 /* deploy */
+.deploy{
+  padding-top:45px;
+  padding-bottom: 45px;
+}
 .deploy .lista{
 border-left:3px solid #ccc;
 }
 .deploy ul{
+  margin-top:40px;
+  margin-bottom:20px;
   padding-left:0px;
 }
 
@@ -134,18 +148,26 @@ text-decoration: none;
 border-color:blue;
 color:darkblue;
 }
-
+.deploy .normal-text{
+  padding-bottom:25px;
+  padding-top:5px;
+}
 /* .carousel-up e down */
 .carousel-up,.carousel-down{
 background-color: #eee;
 }
 .carousel-up{
-background-color: #f1f3f8;}
+background-color: #f1f3f8;
+padding:50px 0;
+}
 
 .carousel-up img{
 width:80%;
 height:auto;
-margin:0 20px;
+margin:100px 20px 0px 20px;
+}
+.carousel-up ul{
+  margin-top:50px;
 }
 .carousel-up ul,.carousel-down ul{
   padding:0;
@@ -190,10 +212,12 @@ color:#2955FF;
 }
 .fa-angle-right{color:#1d2555;
 opacity:0.1;
-font-size:80px;}
+font-size:80px;
+font-weight: 900;}
 .fa-angle-left{color:#6a7492;
   opacity:0.1;
-  font-size:80px;}
+  font-size:80px;
+font-weight: 900;}
   .sx:hover .fa-angle-left,
   .dx:hover .fa-angle-right{
     opacity:1;}
@@ -243,13 +267,21 @@ font-size:80px;}
     height:25px;
     border-bottom:1px solid #fff;
 }
+.test-speed:last-child{
+  border-bottom:none;}
+
   .test-speed .city{opacity:0.6;}
 
   .test-speed a{
     color:#00D0D4;
   }
+.gradient .bis{
+  margin-top:20px;
+}
+
   /* footer */
   .footer{
+    position:relative;
     padding:50px 0;
     background-color: #08154f;
     color:white;
@@ -262,7 +294,84 @@ font-size:80px;}
   .footer ul
   {
     padding-left:0;
+    margin-bottom:20px;
   }
+.footer ul li{
+  font-weight:lighter;
+  line-height: 2;
+}
+.footer ul li:first-child{
+  font-size: 17px;
+font-weight:600;
+}
+.footer .iconesocial i{
+  margin-top:10px;
+font-size: 25px;
+padding-right: 5px;
+}
+.footer p{
+  line-height:0.6;
+}
+
+.footer .iconasito{
+  margin-bottom:15px;
+}
+
+
+.bubble {
+  display:inline-block;
+  vertical-align: middle;
+    position: relative;
+    background: #ffffff;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: center;
+    width: 300px;
+    height: 100%;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+.bubble:after {
+    content: '';
+    position: absolute;
+    display:block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 9px 0 0 9px;
+    border-color: transparent transparent transparent #ffffff;
+    top: 70%;
+    right: -6px;
+    margin-top: -9px;
+}
+.shark img{
+  width: 80px;
+  padding-bottom: 10px;
+}
+.shark span {
+  position:relative;
+  bottom:25px;
+  right:25px;
+  display:inline-block;
+text-align: center;
+padding:6px;
+line-height: 0.5;
+background-color:red;
+border-radius: 50%;
+border:1px solid #fff;
+}
+.papover{
+  position:absolute;
+bottom:20px;
+left:20px;
+}
+.pupover{
+  position:absolute;
+  bottom:30px;
+  right:20px;
+}
+
   /* Extra Small Devices, Phones */
   @media screen and (min-width : 480px) {
 
@@ -270,18 +379,34 @@ font-size:80px;}
   font-size:12px;
 }
 
-  }
 
   /* Small Devices, Tablets */
   @media  screen and (min-width : 768px) {
     .carousel-up img,.carousel-content{
-    width:65%;}
+    width:75%;}
     .carousel-content img{
     width:75%;}
     .carousel-content p{
     font-size:40px;
     }
   }
+
+/* faccio una media query speciale laddove si rompe la  nav di bootstrap */
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}
 
   /* Medium Devices, Desktops */
   @media screen and (min-width : 992px) {
@@ -294,4 +419,19 @@ font-size:80px;}
   }
   .carousel-content img{
   width:50%;}
+
+  .gradient .bis{
+    margin-top:0;
+  }
+  .carousel-up p{
+font-size: 25px;
+font-weight: 300;
+  }
+
+.shark{
+  display:inline-block;
+}
+.shark img{
+padding-bottom:0;
+
   }

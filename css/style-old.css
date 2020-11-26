@@ -99,7 +99,8 @@ color:#fff;} */
 }
 .immagini{
 background-color: #f1f3f8;
-padding:35px 0;
+padding-top:35px;
+padding-bottom:35px;
 }
 .immagini img{
 
@@ -158,7 +159,8 @@ background-color: #eee;
 }
 .carousel-up{
 background-color: #f1f3f8;
-padding:50px 0;
+padding-top:50px;
+padding-bottom:50px;
 }
 .carousel-up p {
   padding-bottom:80px;

@@ -29,6 +29,17 @@ ul{list-style: none;}
   background-color: #5492FF;
   border-color:#5492FF;
   }
+.my-form button.bg-google{
+position:relative;
+}
+.my-form button.bg-google:before
+{
+content:" ";
+background-image: url("../img/google.png");
+width:14px;
+height:14px;
+position:absolute;
+}
 
 /* nav */
 .nav{
@@ -279,18 +290,16 @@ icona cerchio pieno e cerchio vuto di fontawesome */
 }
 .test-speed{
   width:100%;
-  height:40px;
+  min-height:40px;
   border-bottom:1px solid #fff;
-  line-height: 40px;
+  padding:10px 0;
+  font-size: 0.7em;
 }
 .test-speed:last-child{
   border-bottom:none;}
 
 .test-speed .city{opacity:0.6;}
 
-.test-speed{
-    font-size:12px;
-  }
 .test-speed a{
     color:#00D0D4;
   }

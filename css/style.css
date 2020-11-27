@@ -125,9 +125,7 @@ ul{list-style: none;}
   padding-top:45px;
   padding-bottom: 45px;
 }
-.deploy .lista{
-  border-left:3px solid #ccc;
-}
+
 .deploy ul{
   margin-top:40px;
   margin-bottom:20px;
@@ -144,7 +142,7 @@ ul{list-style: none;}
 }
 .deploy ul li a{
   padding:15px 15px;
-  border-left: 3px solid #ccc;
+  border-left: 2px solid #ccc;
   text-decoration: none;
 }
 
@@ -375,6 +373,7 @@ icona cerchio pieno e cerchio vuto di fontawesome */
   width: 80px;
   background-color: #2553FF;
 }
+/* codice per creare il counter notifiche sullo squalo */
 .shark span {
   position:relative;
   bottom:25px;
@@ -387,6 +386,7 @@ background-color:red;
 border-radius: 50%;
 border:1px solid #fff;
 }
+/* il popover left sarà da mobile,right da tablet-> */
 .popover-left{
   position:absolute;
 bottom:60px;
@@ -401,7 +401,7 @@ margin-top:0;
   right:20px;
 }
 
-  /* Small Devices, Tablets */
+  /* Tablets */
   @media  screen and (min-width : 768px) {
     .carousel-up img,.carousel-content{
     width:75%;}

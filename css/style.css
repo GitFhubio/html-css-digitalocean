@@ -85,9 +85,10 @@ avrei dovuto dare lineheight al button pari all'height del before per centrare g
 
   padding-top:40px;
   background-image: url("../img/sfondo-pesci.svg");
-  background-size:160%;
+  background-size:cover;
+  background-repeat: no-repeat;
   margin-bottom:0px;
-  background-position: 50% 70%;
+  background-position: 50% 80%;
 }
 /* jumbotron */
 .jumbotron .titolo p{
@@ -246,7 +247,7 @@ avrei dovuto dare lineheight al button pari all'height del before per centrare g
   opacity:1;}
 
 /* Per le animazioni dei cerchietti fatte sostituendo
-icona cerchio pieno e cerchio vuto di fontawesome */
+icona cerchio pieno e cerchio vuoto di fontawesome */
 
 .icon::before {
   display: inline-block;

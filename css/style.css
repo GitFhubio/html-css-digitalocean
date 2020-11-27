@@ -1,6 +1,6 @@
 /* Regole css generali */
 body{ font-family: Sailec-Regular,"system-ui",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,"sans-serif";
-  font-size:16px;
+font-size:16px;
 }
 .blue{
   color: #3A7FFF;
@@ -17,452 +17,460 @@ body{ font-family: Sailec-Regular,"system-ui",-apple-system,BlinkMacSystemFont,S
 
 /* font per h-titoli jumbotron,2 carousel,deploy e features  */
 .med-text{font-size:40px;
-color:#000043;}
+  color:#000043;}
 
-/* font per p-sottotitoli deploy e 2 carousel */
-.higher-text{font-size:26px;
-color:#455780;}
+  /* font per p-sottotitoli deploy e 2 carousel */
+  .higher-text{font-size:26px;
+    color:#455780;}
 
-ul{list-style: none;}
-
-.my-form button.bg-lightblue{
-  background-color: #5492FF;
-  border-color:#5492FF;
-  }
-.my-form button.bg-google{
-position:relative;
-}
-.my-form button.bg-google:before
-{
-content:" ";
-display:block;
-background-image: url("../img/google.png");
-width:20px;
-height:20px;
-background-size: cover;
-position:absolute;
-}
-/* se avessi messo un height minore del prodotto font size per lineheight(naturale)
-avrei dovuto dare lineheight al button pari all'height del before per centrare google */
-/* nav */
-.nav{
-  padding-left:15px;
- }
-.navbar{
-  margin-bottom:0px;
-  padding-top:5px;
-  padding-bottom:5px;
-  }
-.navbar-default {
-  background-color: transparent;
-  border-color: transparent;
- }
-.navbar-brand {
-  padding: 12px 5px;}
-.logo{
-  width:160px;
-  margin-right: 55px;
-}
-.navbar-default .navbar-toggle {
-  margin-right:0;
-  border-color: transparent;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #3A7FFF;
-  width: 19px;
-  height: 3px;}
-  .nav > li > a{
-  padding-left:10px;
-  padding-right:10px;
-}
-.nav .btn-default {
-  color: #3A7FFF;
-  border-color: #3A7FFF;}
-
-.jumbotron{
-
-  padding-top:40px;
-  background-image: url("../img/sfondo-pesci.svg");
-  background-size:cover;
-  background-repeat: no-repeat;
-  margin-bottom:0px;
-  background-position: 50% 80%;
-}
-/* jumbotron */
-.jumbotron .titolo p{
-  font-weight:400;
-  opacity:0.9;
-}
-.form{
-  border-radius:5px;
-  background-color:#fff;
-  padding:30px 20px;
-
-}
-
-.jumbotron h4{
-  padding-top: 8px;
-  font-weight: 300;
-}
-.jumbotron h4 a{
-  text-decoration:underline;
-}
-.google-icon{
-  width:14px;
-  height:auto;
-  padding-top:4px;
-}
-
-/* immagini */
-
-.immagini{
-  padding-top:35px;
-  padding-bottom:35px;
-}
-.immagini img{
-  vertical-align:middle;
-  width:250px;
-  height:auto;
-  margin:40px 0;
-}
-.immagini span{
-  color:#687596;
-  font-size:17px;
-}
-.loghi{
-  margin-top:20px;
-}
-
-/* deploy */
-.deploy{
-  padding-top:45px;
-  padding-bottom: 45px;
-}
-
-.deploy ul{
-  margin-top:40px;
-  margin-bottom:20px;
-  padding-left:0px;
-}
-
-.deploy a{
-  color:#455780;
-}
-
-.deploy ul li{
-  font-weight: lighter;
-  line-height: 3;
-}
-.deploy ul li a{
-  padding:15px 15px;
-  border-left: 2px solid #ccc;
-  text-decoration: none;
-}
-
-.deploy ul li a:hover {
-  border-color:blue;
-  color:blue;
-  font-weight: 400;
-}
-.deploy .normal-text{
-  padding-bottom:25px;
-  padding-top:5px;
-}
-/* .carousel-up e down */
-.carousel-up,.carousel-down,.immagini{
-  background-color: #f1f3f8;
-}
-.carousel-up{
-  padding-top:50px;
-  padding-bottom:50px;
-}
-.carousel-up p {
-  padding-bottom:120px;
-  padding-top:20px;
-}
-.carousel-up img{
-  width:80%;
-  height:auto;
-  margin:0 20px;
-}
-
-.carousel-up ul,.carousel-down ul{
-  padding-left: 0;
-  padding-bottom:80px;
-  padding-top:50px;
-}
-
-.carousel-up h5{
-  font-size: 22px;
-  padding-top:10px;
-  padding-bottom: 50px;
-}
-
-.carousel-content{
-  padding:40px 10px;
-  width:80%;
-  margin:0 auto;
-  background-color: #fff;
-  margin:0 20px;
-}
-
-.carousel-down .left,.carousel-down .right, .carousel-content{
-  display:inline-block;
-  vertical-align: middle;
-}
-.carousel-down h2{
-  padding-top:60px;
-  padding-bottom: 70px;
-}
-.carousel-down h5{
-  font-weight: 600;
-}
-.carousel-down h6{
-  padding-bottom: 30px;
-}
-.carousel-content img{
-  width:100%;
-  height:auto;
-}
-.carousel-content p{
-  padding: 20px 0;
-}
-.cerchietti li, .iconesocial li{
-  display:inline-block;
-}
-.fa-angle-right,.fa-angle-left{
-  opacity:0.1;
-  font-size:80px;
-  font-weight: 900;}
-
-/* Per le animazioni delle arrow dei carousel */
-.fa-angle-right{color:#1d2555;
-}
-.fa-angle-left{color:#6a7492;
-}
-.sx:hover .fa-angle-left,
-.dx:hover .fa-angle-right{
-  opacity:1;}
-
-/* Per le animazioni dei cerchietti fatte sostituendo
-icona cerchio pieno e cerchio vuoto di fontawesome */
-
-.icon::before {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;}
-
-.circle::before{font-family: FontAwesome ; font-weight: 900; content: "\f1db ";
-}
-.cerchietti li:hover   .circle::before {font-family: FontAwesome ; font-weight: 900; content: "\f111 ";
-}
-/* features */
-
-.features{
-  padding-top:50px;
-  padding-bottom:80px;
-}
-.features img
-  {margin-top:10px;}
-/* gradient e get-started */
-.get-started
-{
-  padding:50px 0;
-}
-.get-started h3{
-  font-size:40px;
-}
-.get-started .btn{
-    margin-top: 15px;
-    font-weight: 900;
-    font-size: 17px;
-}
-.gradient,.get-started{
-    background: linear-gradient(to right, rgba(32,0,156,1) 0%,rgba(33,9,177,1) 50%,rgba(32,0,156,1) 100%);;
-}
-.gradient{
-  padding-top:30px;
-  padding-bottom:80px;
-}
-.gradient h3{
-  font-weight:500;
-  padding-bottom:5px;
-}
-.test-speed{
-  width:100%;
-  min-height:40px;
-  border-bottom:1px solid #fff;
-  padding:10px 0;
-  font-size: 0.7em;
-}
-.test-speed:last-child{
-  border-bottom:none;}
-
-.test-speed .city{opacity:0.6;}
-
-.test-speed a{
-    color:#00D0D4;
-  }
-.gradient .bis{
-  margin-top:20px;
-  }
-
-  /* footer */
-.footer{
-  position:relative;
-  padding:50px 0;
-  background-color: #08154f;
-  color:white;
-  }
-
-.footer .iconasito{
-  width:40px;
-  height:auto;
-  }
-.footer ul
-  {
-  padding-left:0;
-  margin-bottom:20px;
-  }
-.footer ul li{
-  font-weight:lighter;
-  line-height: 2;
-  }
-.footer ul li:first-child{
-  font-size: 17px;
-  font-weight:600;
-  }
-.footer .iconesocial i{
-  margin-top:10px;
-  font-size: 25px;
-  padding-right: 5px;
-  }
-.footer p{
-  margin-bottom:0;
-}
-.footer .proud{
-  opacity:0.5;
-}
-.footer .iconasito{
-  margin-bottom:15px;
-}
-
-/* codice per fake popovers in fondo al footer */
-
-.bubble {
-  display:inline-block;
-  vertical-align: middle;
-  position: relative;
-  background: #ffffff;
-  color: #000;
-  font-size: 15px;
-  line-height: 1.2;
-  text-align: center;
-  max-width: 300px;
-  height: 100%;
-  border-radius: 10px;
-  padding: 10px 0;
-  margin-top:20px;
-}
-/* Per creare triangolino */
-.bubble:after {
-  content: '';
-  position: absolute;
-  display:block;
-  width: 0;
-  z-index: 1;
-  border-style: solid;
-  border-width: 9px 0 0 9px;
-  border-color: transparent transparent transparent #ffffff;
-  top: 70%;
-  right: -6px;
-  margin-top: -9px;
-}
-.shark img{
-  width: 70px;
-  height:auto;
-  background-color: #2553FF;
-}
-/* codice per creare il counter notifiche sullo squalo */
-.shark span {
-  position:relative;
-  bottom:25px;
-  right:25px;
-  display:inline-block;
-text-align: center;
-padding:6px;
-line-height: 0.5;
-background-color:red;
-border-radius: 50%;
-border:3px solid #fff;
-}
-/* il popover left sarà da mobile,right da tablet-> */
-.popover-left{
-  position:absolute;
-bottom:60px;
-left:40px;
-}
-.popover-right .bubble{
-margin-top:0;
-}
-.popover-right{
-  position:absolute;
-  bottom:30px;
-  right:20px;
-}
-
-  /* Tablets */
-  @media  screen and (min-width : 768px) {
-    .carousel-up img,.carousel-content{
-    width:75%;}
-    .carousel-content img{
-    width:75%;}
-    .carousel-content p{
-    font-size:40px;
+    ul{list-style: none;}
+    .my-form button{font-weight: bold;}
+    .my-form button.bg-lightblue{
+      background-color: #5492FF;
+      border-color:#5492FF;
     }
-    .test-speed{
-      font-size: 0.9em;
-    }
-  }
+    .my-form button.bg-lightblue:hover{
+      color:#fff;
+      background-color:#2a8cff;}
+      .my-form button.bg-google{
+        position:relative;
+        border:0;
+        box-shadow:1px 1px 2px 1px #eee;
+      }
 
- /* faccio una media query speciale laddove si rompe la  nav di bootstrap */
+      .my-form button.bg-google:before
+      {
+        content:" ";
+        display:block;
+        background-image: url("../img/google.png");
+        width:20px;
+        height:20px;
+        background-size: cover;
+        position:absolute;
+      }
+      /* se avessi messo un height minore del prodotto font size per lineheight(naturale)
+      avrei dovuto dare lineheight al button pari all'height del before per centrare google */
+      /* nav */
+      .my-form h5{padding-top: 5px;}
 
- @media (min-width: 768px) and (max-width: 991px) {
-    .navbar-collapse.collapse {
-        display: none !important;
-    }
-    .navbar-collapse.collapse.in {
-        display: block !important;
-    }
-    .navbar-header .collapse, .navbar-toggle {
-        display:block !important;
-    }
-    .navbar-header {
-        float:none;
-    }
-}
-  /* Medium Devices, Desktops */
-  @media screen and (min-width : 992px) {
-    .immagini img{
-    width:145px;}
-  .carousel-content{
-    padding:90px 2px;
-  }
-  .carousel-content img{
-  width:50%;}
+      .nav{
+        padding-left:15px;
+      }
+      .navbar{
+        margin-bottom:0px;
+        padding-top:5px;
+        padding-bottom:5px;
+      }
+      .navbar-default {
+        background-color: transparent;
+        border-color: transparent;
+      }
+      .navbar-brand {
+        padding: 12px 5px;}
+        .logo{
+          width:160px;
+          margin-right: 55px;
+        }
+        .navbar-default .navbar-toggle {
+          margin-right:0;
+          border-color: transparent;
+        }
 
-  .gradient .bis{
-    margin-top:0;
-  }
-  .carousel-up p{
-font-size: 25px;
-font-weight: 300;
-  }
-.navbar-right{padding-right: 8px;}
-.shark{
-  display:inline-block;
-}
-  }
+        .navbar-default .navbar-toggle .icon-bar {
+          background-color: #3A7FFF;
+          width: 19px;
+          height: 3px;}
+          .nav > li > a{
+            padding-left:10px;
+            padding-right:10px;
+          }
+          .nav .btn-default {
+            color: #3A7FFF;
+            border-color: #3A7FFF;}
+
+            .jumbotron{
+
+              padding-top:40px;
+              background-image: url("../img/sfondo-pesci.svg");
+              background-size:cover;
+              background-repeat: no-repeat;
+              margin-bottom:0px;
+              background-position: 50% 80%;
+            }
+            /* jumbotron */
+            .jumbotron .titolo p{
+              font-weight:400;
+              opacity:0.9;
+            }
+            .form{
+              border-radius:5px;
+              background-color:#fff;
+              padding:30px 20px;
+
+            }
+
+            .jumbotron h4{
+              padding-top: 8px;
+              font-weight: 300;
+            }
+            .jumbotron h4 a{
+              text-decoration:underline;
+            }
+            .google-icon{
+              width:14px;
+              height:auto;
+              padding-top:4px;
+            }
+
+            /* immagini */
+
+            .immagini{
+              padding-top:35px;
+              padding-bottom:35px;
+            }
+            .immagini img{
+              vertical-align:middle;
+              width:250px;
+              height:auto;
+              margin:40px 0;
+            }
+            .immagini span{
+              color:#687596;
+              font-size:17px;
+            }
+            .loghi{
+              margin-top:20px;
+            }
+
+            /* deploy */
+            .deploy{
+              padding-top:45px;
+              padding-bottom: 45px;
+            }
+
+            .deploy ul{
+              margin-top:40px;
+              margin-bottom:20px;
+              padding-left:0px;
+            }
+
+            .deploy a{
+              color:#455780;
+            }
+
+            .deploy ul li{
+              font-weight: lighter;
+              line-height: 3;
+            }
+            .deploy ul li a{
+              padding:15px 15px;
+              border-left: 2px solid #ccc;
+              text-decoration: none;
+            }
+
+            .deploy ul li a:hover {
+              border-color:blue;
+              color:blue;
+              font-weight: 400;
+            }
+            .deploy .normal-text{
+              padding-bottom:25px;
+              padding-top:5px;
+            }
+            /* .carousel-up e down */
+            .carousel-up,.carousel-down,.immagini{
+              background-color: #f1f3f8;
+            }
+            .carousel-up{
+              padding-top:50px;
+              padding-bottom:50px;
+            }
+            .carousel-up p {
+              padding-bottom:120px;
+              padding-top:20px;
+            }
+            .carousel-up img{
+              width:80%;
+              height:auto;
+              margin:0 20px;
+            }
+
+            .carousel-up ul,.carousel-down ul{
+              padding-left: 0;
+              padding-bottom:80px;
+              padding-top:50px;
+            }
+
+            .carousel-up h5{
+              font-size: 22px;
+              padding-top:10px;
+              padding-bottom: 50px;
+            }
+
+            .carousel-content{
+              padding:40px 10px;
+              width:80%;
+              margin:0 auto;
+              background-color: #fff;
+              margin:0 20px;
+            }
+
+            .carousel-down .left,.carousel-down .right, .carousel-content{
+              display:inline-block;
+              vertical-align: middle;
+            }
+            .carousel-down h2{
+              padding-top:60px;
+              padding-bottom: 70px;
+            }
+            .carousel-down h5{
+              font-weight: 600;
+            }
+            .carousel-down h6{
+              padding-bottom: 30px;
+            }
+            .carousel-content img{
+              width:100%;
+              height:auto;
+            }
+            .carousel-content p{
+              padding: 20px 0;
+            }
+            .cerchietti li, .iconesocial li{
+              display:inline-block;
+            }
+            .fa-angle-right,.fa-angle-left{
+              opacity:0.1;
+              font-size:80px;
+              font-weight: 900;}
+
+              /* Per le animazioni delle arrow dei carousel */
+              .fa-angle-right{color:#1d2555;
+              }
+              .fa-angle-left{color:#6a7492;
+              }
+              .sx:hover .fa-angle-left,
+              .dx:hover .fa-angle-right{
+                opacity:1;}
+
+                /* Per le animazioni dei cerchietti fatte sostituendo
+                icona cerchio pieno e cerchio vuoto di fontawesome */
+
+                .icon::before {
+                  display: inline-block;
+                  font-style: normal;
+                  font-variant: normal;
+                  text-rendering: auto;
+                  -webkit-font-smoothing: antialiased;}
+
+                  .circle::before{font-family: FontAwesome ; font-weight: 900; content: "\f1db ";
+                }
+                .cerchietti li:hover   .circle::before {font-family: FontAwesome ; font-weight: 900; content: "\f111 ";
+              }
+              /* features */
+
+              .features{
+                padding-top:50px;
+                padding-bottom:80px;
+              }
+              .features img
+              {margin-top:10px;}
+              /* gradient e get-started */
+              .get-started
+              {
+                padding:50px 0;
+              }
+              .get-started h3{
+                font-size:40px;
+              }
+              .get-started .btn{
+                margin-top: 15px;
+                font-weight: 900;
+                max-width:100%;
+              }
+              .gradient,.get-started{
+                background: linear-gradient(to right, rgba(32,0,156,1) 0%,rgba(33,9,177,1) 50%,rgba(32,0,156,1) 100%);;
+              }
+              .gradient{
+                padding-top:30px;
+                padding-bottom:80px;
+              }
+              .gradient h3{
+                font-weight:500;
+                padding-bottom:5px;
+              }
+              .test-speed{
+                width:100%;
+                min-height:40px;
+                border-bottom:1px solid #fff;
+                padding:10px 0;
+                font-size: 0.7em;
+              }
+              .test-speed:last-child{
+                border-bottom:none;}
+
+                .test-speed .city{opacity:0.6;}
+
+                .test-speed a{
+                  color:#00D0D4;
+                }
+                .gradient .bis{
+                  margin-top:20px;
+                }
+
+                /* footer */
+                .footer{
+                  position:relative;
+                  padding:50px 0;
+                  background-color: #08154f;
+                  color:white;
+                }
+
+                .footer .iconasito{
+                  width:40px;
+                  height:auto;
+                }
+                .footer ul
+                {
+                  padding-left:0;
+                  margin-bottom:20px;
+                }
+                .footer ul li{
+                  font-weight:lighter;
+                  line-height: 2;
+                }
+                .footer ul li:first-child{
+                  font-size: 17px;
+                  font-weight:600;
+                }
+                .footer .iconesocial i{
+                  margin-top:20px;
+                  font-size: 25px;
+                  padding-right: 5px;
+                }
+                .footer p{
+                  margin-bottom:0;
+                }
+                .footer .proud{
+                  opacity:0.5;
+                }
+                .footer .iconasito{
+                  margin-bottom:15px;
+                }
+
+                /* codice per fake popovers in fondo al footer */
+
+                .bubble {
+                  display:inline-block;
+                  vertical-align: middle;
+                  position: relative;
+                  background: #ffffff;
+                  color: #000;
+                  font-size: 15px;
+                  line-height: 1.2;
+                  text-align: center;
+                  max-width: 300px;
+                  height: 100%;
+                  border-radius: 10px;
+                  padding: 10px 0;
+                  margin-top:20px;
+                }
+                /* Per creare triangolino */
+                .bubble:after {
+                  content: '';
+                  position: absolute;
+                  display:block;
+                  width: 0;
+                  z-index: 1;
+                  border-style: solid;
+                  border-width: 9px 0 0 9px;
+                  border-color: transparent transparent transparent #ffffff;
+                  top: 70%;
+                  right: -6px;
+                  margin-top: -9px;
+                }
+                .shark img{
+                  width: 70px;
+                  height:auto;
+                  background-color: #2553FF;
+                }
+                /* codice per creare il counter notifiche sullo squalo */
+                .shark span {
+                  position:relative;
+                  bottom:25px;
+                  right:25px;
+                  display:inline-block;
+                  text-align: center;
+                  padding:6px;
+                  line-height: 0.5;
+                  background-color:red;
+                  border-radius: 50%;
+                  border:3px solid #fff;
+                }
+                /* il popover left sarà da mobile,right da tablet-> */
+                .popover-left{
+                  position:absolute;
+                  bottom:60px;
+                  left:40px;
+                }
+                .popover-right .bubble{
+                  margin-top:0;
+                }
+                .popover-right{
+                  position:absolute;
+                  bottom:30px;
+                  right:20px;
+                }
+
+                /* Tablets */
+                @media  screen and (min-width : 768px) {
+                  .carousel-up img,.carousel-content{
+                    width:75%;}
+                    .carousel-content img{
+                      width:75%;}
+                      .carousel-content p{
+                        font-size:40px;
+                      }
+                      .test-speed{
+                        font-size: 0.9em;
+                      }
+                    }
+
+                    /* faccio una media query speciale laddove si rompe la  nav di bootstrap */
+
+                    @media (min-width: 768px) and (max-width: 991px) {
+                      .navbar-collapse.collapse {
+                        display: none !important;
+                      }
+                      .navbar-collapse.collapse.in {
+                        display: block !important;
+                      }
+                      .navbar-header .collapse, .navbar-toggle {
+                        display:block !important;
+                      }
+                      .navbar-header {
+                        float:none;
+                      }
+                    }
+                    /* Medium Devices, Desktops */
+                    @media screen and (min-width : 992px) {
+                      .immagini img{
+                        width:145px;}
+                        .carousel-content{
+                          padding:90px 2px;
+                        }
+                        .carousel-content img{
+                          width:50%;}
+
+                          .gradient .bis{
+                            margin-top:0;
+                          }
+                          .carousel-up p{
+                            font-size: 25px;
+                            font-weight: 300;
+                          }
+                          .navbar-right{padding-right: 8px;}
+                          .shark{
+                            display:inline-block;
+                          }
+                        }

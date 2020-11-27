@@ -42,7 +42,8 @@ height:20px;
 background-size: cover;
 position:absolute;
 }
-
+/* se avessi messo un height minore del prodotto font size per lineheight(naturale)
+avrei dovuto dare lineheight al button pari all'height del before per centrare google */
 /* nav */
 .nav{
   padding-left:15px;
@@ -381,7 +382,8 @@ icona cerchio pieno e cerchio vuto di fontawesome */
   margin-top: -9px;
 }
 .shark img{
-  width: 80px;
+  width: 70px;
+  height:auto;
   background-color: #2553FF;
 }
 /* codice per creare il counter notifiche sullo squalo */
@@ -395,7 +397,7 @@ padding:6px;
 line-height: 0.5;
 background-color:red;
 border-radius: 50%;
-border:1px solid #fff;
+border:3px solid #fff;
 }
 /* il popover left sarà da mobile,right da tablet-> */
 .popover-left{
@@ -420,9 +422,6 @@ margin-top:0;
     width:75%;}
     .carousel-content p{
     font-size:40px;
-    }
-    .test-speed{
-      font-size:16px;
     }
   }
 

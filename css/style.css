@@ -31,13 +31,6 @@ ul{list-style: none;}
   color:#fff;
   }
 
-.logo{
-  width:160px;
-  height:auto;
-  margin-right: 50px;
-  position:relative;
-  bottom:5px;
-}
 
 /* nav */
 .navbar{
@@ -47,8 +40,16 @@ ul{list-style: none;}
   background-color: transparent;
   border-color: transparent;
 }
-
+.logo{
+  width:160px;
+  height:auto;
+  margin-left:15px;
+  margin-right: 50px;
+  position:relative;
+  bottom:5px;
+}
 .navbar-default .navbar-toggle {
+  margin-right:0;
   border-color: transparent;}
 
 .navbar-default .navbar-toggle .icon-bar {

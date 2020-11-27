@@ -303,7 +303,7 @@ font-weight: 900;}
     color:white;
   }
 
-  .footer img{
+  .footer .iconasito{
     width:40px;
     height:auto;
   }
@@ -366,6 +366,7 @@ padding-right: 5px;
 }
 .shark img{
   width: 80px;
+  background-color: #2553FF;
   padding-bottom: 10px;
 }
 .shark span {

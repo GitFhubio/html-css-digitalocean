@@ -286,7 +286,7 @@ font-weight: 900;}
   .test-speed .city{opacity:0.6;}
 
   .test-speed{
-    font-size:16px;
+    font-size:14px;
   }
   .test-speed a{
     color:#00D0D4;
@@ -402,7 +402,11 @@ left:20px;
     }
 
     .immagini img{
-    width:180px;
+    width:180px;}
+
+    .test-speed{
+      font-size:16px;
+    }
   }
 
  /* faccio una media query speciale laddove si rompe la  nav di bootstrap */

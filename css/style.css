@@ -423,6 +423,9 @@ margin-top:0;
     .carousel-content p{
     font-size:40px;
     }
+    .test-speed{
+      font-size: 0.9em;
+    }
   }
 
  /* faccio una media query speciale laddove si rompe la  nav di bootstrap */

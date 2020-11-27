@@ -361,7 +361,7 @@ icona cerchio pieno e cerchio vuto di fontawesome */
   font-size: 15px;
   line-height: 1.2;
   text-align: center;
-  width: 300px;
+  max-width: 300px;
   height: 100%;
   border-radius: 10px;
   padding: 10px 0;

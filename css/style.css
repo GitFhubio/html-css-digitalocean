@@ -53,15 +53,13 @@ font-size:16px;
   background-color: #3A7FFF;
   width: 19px;
   height: 3px;}
-.nav > li > a{
-  padding-left:10px;
-  padding-right:10px;
-}
+  .navbar-default .navbar-nav > li > a{
+  color:#000043;;
+  }
 .nav .btn-default {
   color: #3A7FFF;
   border-color: #3A7FFF;
 }
-
 .jumbotron{
   padding-top:40px;
   background-image: url("../img/sfondo-pesci.svg");

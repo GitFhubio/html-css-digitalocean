@@ -13,10 +13,10 @@
   <meta name="description" content="Esercizio lunghetto con Bootstrap">
 </head>
 <body>
-  <div class="nav container">
+  <div class="container">
     <!-- Static navbar -->
-    <nav class="navbar navbar-default">
-        <div class="navbar-header row">
+    <nav class="navbar navbar-default row">
+        <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -76,8 +76,7 @@
       </nav>
     </div>
     <!-- Main component for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
+      <div class="container jumbotron">
         <div class="row">
           <div class="col-xs-12 col-sm-6">
             <div class="titolo white">
@@ -101,14 +100,13 @@
                 <button type="submit" class="btn btn-block btn-default azzurro">Create your account</button>
                 <button type="submit" class="btn btn-block btn-default"><img class="google-icon pull-left" src="img/google.png" alt=""> Sign up with google</button>
                 <div class="form-title text-center">
-                  <h4>By signing up you agree to the <a href="#">Terms of Service</a></h4>
+                  <h4>By signing up you agree to the <a class="blue" href="#">Terms of Service</a></h4>
                 </div>
               </form>
             </div>
           </div>
         </div>
       </div>
-    </div>
     <!-- /container -->
     <div class="container-fluid immagini text-center">
       <span class="text-uppercase font-weight-bold">Innovative Business Trust DigitalOcean</span>
@@ -120,7 +118,7 @@
         <img src="img/hashicorp.png" alt="">
         <img src="img/splunk.webp" alt="">
       </div>
-      <a href="#">View customer stories ></a>
+      <a class="blue" href="#">View customer stories ></a>
     </div>
     <!-- riga deploy -->
     <div class="container-fluid deploy ">
@@ -180,7 +178,7 @@
           <img class="fake-carousel" src="img/droplets.jpg" alt="">
           <span class="dx hidden-xs"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
           <h5>Create compute servers in 55 seconds or less.</h5>
-          <ul class="cerchietti">
+          <ul class="cerchietti blue">
             <li><span class="icon circle"></span></li>
             <li><span class="icon circle"></span> </li>
             <li><span class="icon circle"></span></li>
@@ -197,19 +195,19 @@
           <img src="img/piucheck.svg" alt="">
           <h3>Predictable pricing</h3>
           <p>Leave complex pricing structures behind.Always know what you'll pay per month with a flat, industry-leading pricing structure.</p>
-          <a href="#">Pricing > </a>
+          <a class="blue" href="#">Pricing > </a>
         </div>
         <div class="col-md-4 col-xs-12">
           <img src="img/ipod.svg" alt="">
           <h3>World-class service</h3>
           <p>Free round-the-clock technical support for all customers.You'll feel the love.</p>
-          <a href="#">Support > </a>
+          <a class="blue" href="#">Support > </a>
         </div>
         <div class="col-md-4 col-xs-12">
           <img src="img/shield.svg" alt="">
           <h3>Predictable pricing</h3>
           <p>More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
-          <a href="#">Security > </i></a>
+          <a class="blue" href="#">Security > </i></a>
         </div>
       </div>
     </div>
@@ -372,10 +370,10 @@
             <p class="higher-text">"We have been able to make scaling the technical insfrastructure of our business cost effective and efficient."</p>
             <h5 >Rick O' Toole</h5>
             <h6>Co-founder and CTO</h6>
-            <a href="#">Read story ></a>
+            <a class="blue" href="#">Read story ></a>
           </div>
           <span class="dx hidden-xs"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-          <ul class="cerchietti">
+          <ul class="cerchietti blue">
             <li><span class="icon circle"></span></li>
             <li><span class="icon circle"></span> </li>
             <li><span class="icon circle"></span></li>
@@ -388,7 +386,7 @@
   <!-- row get-started -->
   <div class="text-center container-fluid get-started">
     <h3 class="white">Get Started now.</h3>
-    <a href="#"><button type="button" class="btn btn-light ">Create your account</button></a>
+    <a href="#"><button type="button" class="btn btn-light blue">Create your account</button></a>
   </div>
   <!-- row get-started -->
   <div class="footer">
@@ -464,7 +462,7 @@
     </div>
     <!-- Qui sotto nel footer a cui ho dato relative
     creo due popover in absolute,uno visile da mobile l'altro altrove -->
-    <div class="papover visible-xs visible-sm">
+    <div class="popover-left visible-xs visible-sm">
       <div class="shark">
         <img src="img/dd.png" class="img-rounded" alt="">
         <span>2</span>
@@ -473,7 +471,7 @@
         Can I help you answer any question you have about DigitalOcean?
       </div>
     </div>
-    <div class="pupover visible-md visible-lg">
+    <div class="popover-right visible-md visible-lg">
       <div class="bubble">
         Can I help you answer any question you have about DigitalOcean?
       </div>

@@ -58,11 +58,10 @@ avrei dovuto dare lineheight al button pari all'height del before per centrare g
   border-color: transparent;
  }
 .navbar-brand {
-  padding: 12px 15px;}
+  padding: 12px 5px;}
 .logo{
   width:160px;
-  margin-left:5px;
-  margin-right: 50px;
+  margin-right: 55px;
 }
 .navbar-default .navbar-toggle {
   margin-right:0;
@@ -446,7 +445,6 @@ margin-top:0;
   @media screen and (min-width : 992px) {
     .immagini img{
     width:145px;}
-
   .carousel-content{
     padding:90px 2px;
   }
@@ -460,7 +458,7 @@ margin-top:0;
 font-size: 25px;
 font-weight: 300;
   }
-
+.navbar-right{padding-right: 8px;}
 .shark{
   display:inline-block;
 }

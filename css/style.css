@@ -428,11 +428,12 @@ icona cerchio pieno e cerchio vuoto di fontawesome) */
 line-height: 140%;}
 .immagini img{
   width:15%;}
-
 .deploy .bis{
   margin-top:40px;
 }
-
+.carousel-up{
+  padding-top:40px;
+}
 .carousel-up img,.carousel-content,.carousel-content img{
  width:75%;}
 
@@ -466,7 +467,7 @@ line-height: 140%;}
 /* Medium Devices, Desktops */
 @media screen and (min-width : 992px) {
 .jumbotron .titolo h1 {
-  font-size: 63px;
+  font-size: 58px;
 }
 .jumbotron .titolo p{
   font-size: 22px;

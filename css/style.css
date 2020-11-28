@@ -26,7 +26,7 @@ color:#455780;
  ul{list-style: none;
  padding:0;}
 
-/* codice */
+/* nav */
 
 .navbar{
   margin-bottom:0px;
@@ -118,10 +118,6 @@ color:#455780;
   background-size: cover;
   position:absolute;
 }
-/* Nota:se avessi messo un height all'img in before minore del prodotto font-size per line-height(naturale del bottone)
-avrei dovuto dare line-height in px al button pari all'height del before per centrare img google in verticale
-Questo perché il bottone è costruito col padding a partire dal contenuto.*/
-/* nav */
 
 /* immagini */
 
@@ -129,18 +125,18 @@ Questo perché il bottone è costruito col padding a partire dal contenuto.*/
   padding-top:35px;
   padding-bottom:35px;
 }
-.immagini img{
-  vertical-align:middle;
-  width:40%;
-  height:auto;
-  margin:40px 20px;
-}
 .immagini span{
   color:#687596;
   font-size:17px;
 }
-.loghi{
+.immagini .loghi{
   margin-top:20px;
+}
+.immagini .loghi img{
+  vertical-align:middle;
+  width:40%;
+  height:auto;
+  margin:40px 20px;
 }
 
 /* deploy */
@@ -169,7 +165,7 @@ Questo perché il bottone è costruito col padding a partire dal contenuto.*/
   color:blue;
   font-weight: 400;
 }
-.deploy .sub-text{
+.deploy p.sub-text{
   padding-bottom:50px;
   padding-top:8px;
 }
@@ -190,7 +186,7 @@ Questo perché il bottone è costruito col padding a partire dal contenuto.*/
   height:auto;
   margin:0 20px;
 }
-.carousel-up ul,.carousel-down ul{
+.carousel-up ul.cerchietti,.carousel-down ul.cerchietti{
   padding-bottom:50px;
   padding-top:50px;
 }
@@ -232,7 +228,7 @@ Questo perché il bottone è costruito col padding a partire dal contenuto.*/
 .carousel-content p{
   padding: 20px 0;
 }
-.cerchietti li, .iconesocial li{
+ul.cerchietti li, ul.iconesocial li{
   display:inline-block;
 }
 .fa-angle-right,.fa-angle-left{
@@ -252,15 +248,8 @@ Questo perché il bottone è costruito col padding a partire dal contenuto.*/
 /* Per le animazioni dei cerchietti(fatte sostituendo
 icona cerchio pieno e cerchio vuoto di fontawesome) */
 
-.icon::before {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;}
-
 .circle::before{font-family: FontAwesome ; font-weight: 900; content: "\f1db ";}
-.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight: 900; content: "\f111 ";
+ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight: 900; content: "\f111 ";
 }
 /* features */
 
@@ -419,7 +408,7 @@ icona cerchio pieno e cerchio vuoto di fontawesome) */
 @media  screen and (min-width : 768px) {
 .jumbotron .my-form h5{font-size:15px;
   line-height: 140%;}
-.immagini img{
+.immagini .loghi img{
   width:14%;
   margin:40px 5px;
 }
@@ -473,7 +462,7 @@ font-size:22px;
 .jumbotron .my-form{
   padding:15px 20px;}
 
-.immagini img{
+.immagini .loghi img{
   width:15%;
 }
 
@@ -495,7 +484,7 @@ font-size:22px;
 .carousel-up h5{
   padding-bottom: 0px;
 }
-.carousel-up ul{
+.carousel-up ul.cerchietti{
   padding-top:0px;
 }
 .navbar-right{padding-right: 8px;}
@@ -503,3 +492,6 @@ font-size:22px;
   display:inline-block;
 }
 }
+/* Nota riga 116:se avessi messo un height all'img in before minore del prodotto font-size per line-height(naturale del bottone)
+avrei dovuto dare line-height in px al button pari all'height del before per centrare img google in verticale
+Questo perché il bottone è costruito col padding a partire dal contenuto.*/

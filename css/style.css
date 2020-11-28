@@ -3,7 +3,7 @@ body{ font-family: Sailec-Regular,"system-ui",-apple-system,BlinkMacSystemFont,S
 font-size:16px;
 }
 
-/* font-style per h-titoli jumbotron,2 carousel,deploy e features  */
+/* font-style per h-titoli ,2 carousel,deploy e features  */
 .main-text{font-size:40px;
  color:#000043;}
 
@@ -29,7 +29,10 @@ color:#455780;
  padding:0;}
 
 /* codice */
-
+.container{
+  width:100%;
+  max-width:1170px;
+}
 .navbar{
   margin-bottom:0px;
   padding-top:5px;
@@ -84,12 +87,11 @@ color:#455780;
 .jumbotron .my-form h2{font-weight: 600;
 }
 .jumbotron .my-form h2:nth-child(2){color:blue;}
-.jumbotron .my-form h6{padding-top: 5px;
+.jumbotron .my-form h5{padding-top: 5px;
   padding-top: 8px;
-  font-weight: 600;
 }
 
-.jumbotron .my-form h6 a{
+.jumbotron .my-form h5 a{
   text-decoration:underline;
 }
 
@@ -180,10 +182,9 @@ Questo perché il bottone è costruito col padding a partire dal contenuto.*/
 }
 .carousel-up{
   padding-top:50px;
-  padding-bottom:50px;
 }
 .carousel-up p {
-  padding-bottom:120px;
+  padding-bottom:140px;
   padding-top:20px;
 }
 .carousel-up img{
@@ -192,13 +193,14 @@ Questo perché il bottone è costruito col padding a partire dal contenuto.*/
   margin:0 20px;
 }
 .carousel-up ul,.carousel-down ul{
-  padding-bottom:80px;
+  padding-bottom:50px;
   padding-top:50px;
 }
 
 .carousel-up h5{
   font-size: 18px;
   padding-top:10px;
+  padding-bottom: 30px;
 }
 
 .carousel-content{
@@ -218,9 +220,11 @@ Questo perché il bottone è costruito col padding a partire dal contenuto.*/
   padding-bottom: 70px;
 }
 .carousel-down h5{
+  font-size: 22px;
   font-weight: 600;
 }
 .carousel-down h6{
+  font-size: 18px;
   padding-bottom: 30px;
 }
 .carousel-content img{
@@ -320,35 +324,39 @@ icona cerchio pieno e cerchio vuoto di fontawesome) */
 }
 
 .footer .iconasito{
-  width:40px;
+  width:50px;
+  opacity:0.7;
   height:auto;
+  margin-bottom:15px;
 }
  .footer ul
 {
   margin-bottom:20px;
 }
 .footer ul li{
-  font-weight:lighter;
   line-height: 2;
+  opacity:0.6;
 }
 .footer ul li:first-child{
   font-size: 17px;
   font-weight:600;
+    opacity:1;
 }
 .footer .iconesocial i{
   margin-top:20px;
-  font-size: 25px;
-  padding-right: 5px;
-}
-.footer p{
-  margin-bottom:0;
-}
-.footer .proud{
+  font-size: 26px;
+  padding-right: 10px;
   opacity:0.5;
 }
-.footer .iconasito{
-  margin-bottom:15px;
+
+.footer p{
+  margin-bottom:0;
+  opacity:0.6;
 }
+.footer span.proud{
+  opacity:0.4;
+}
+
 
 /* codice per fake popovers in fondo al footer */
 
@@ -416,7 +424,10 @@ icona cerchio pieno e cerchio vuoto di fontawesome) */
 
 /* Tablets */
 @media  screen and (min-width : 768px) {
-
+.jumbotron h1 {
+  font-size: 45px;}
+.jumbotron .my-form h5{font-size:15px;
+line-height: 140%;}
 .immagini img{
   width:15%;}
 

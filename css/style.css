@@ -465,8 +465,9 @@ line-height: 140%;}
 }
 /* Medium Devices, Desktops */
 @media screen and (min-width : 992px) {
-.jumbotron h1 {
-  font-size: 60px;}
+.jumbotron .titolo h1 {
+  font-size: 63px;
+}
 .jumbotron .titolo p{
   font-size: 22px;
   }

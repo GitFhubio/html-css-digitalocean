@@ -3,28 +3,27 @@ body{ font-family: Sailec-Regular,"system-ui",-apple-system,BlinkMacSystemFont,S
 font-size:16px;
 }
 
-/* classi generiche dimensione font */
-.big-text{font-size:70px;}
-.main-text{font-size:55px;}
-.mid-text{font-size:35px;}
-.normal-text{font-size:20px;}
-.small-text{font-size:14px;}
-
 /* font-style per h-titoli jumbotron,2 carousel,deploy e features  */
-.med-text{font-size:40px;
-  color:#000043;}
+.main-text{font-size:40px;
+ color:#000043;}
 
-/* font-style per p-sottotitoli deploy e 2 carousel */
-.higher-text{font-size:26px;
-    color:#455780;}
-
+/* font-style per sottotitoli deploy e 2 carousel */
+.sub-text{font-size:26px;
+ color:#455780;
+}
+/* font-style paragrafi deploy e features */
+.par-text{font-size:18px;
+color:#455780;
+}
 /* classi colore */
 .blue{
   color: #3A7FFF;
+  font-weight: 600;
 }
 .white{
   color:#fff;
 }
+
 /* stile liste */
  ul{list-style: none;
  padding:0;}
@@ -41,7 +40,8 @@ font-size:16px;
   border-color: transparent;
 }
 .navbar-brand {padding: 12px 5px;}
-.logo{
+
+.navbar-brand > .logo{
   width:160px;
   margin-right: 55px;
 }
@@ -59,7 +59,6 @@ font-size:16px;
   padding-right:10px;
   }
 .nav .btn-default {
-  color: #3A7FFF;
   border-color: #3A7FFF;
 }
 /* jumbotron */
@@ -74,20 +73,26 @@ font-size:16px;
   }
 .jumbotron .titolo p{
   font-weight:400;
-  opacity:0.9;
+  opacity:0.7;
 }
-.form{
+
+.jumbotron .my-form{
   border-radius:5px;
   background-color:#fff;
   padding:30px 20px;
 }
-.jumbotron h4{
-  padding-top: 8px;
-  font-weight: 300;
+.jumbotron .my-form h2{font-weight: 600;
 }
-.jumbotron h4 a{
+.jumbotron .my-form h2:nth-child(2){color:blue;}
+.jumbotron .my-form h6{padding-top: 5px;
+  padding-top: 8px;
+  font-weight: 600;
+}
+
+.jumbotron .my-form h6 a{
   text-decoration:underline;
 }
+
 .my-form button{font-weight: bold;}
 .my-form button.bg-lightblue{
   background-color: #5492FF;
@@ -113,10 +118,10 @@ font-size:16px;
   background-size: cover;
   position:absolute;
 }
-/* se avessi messo un height al before minore del prodotto font size per lineheight(naturale del bottone)
-avrei dovuto dare lineheight al button pari all'height del before per centrare img google */
+/* Nota:se avessi messo un height all'img in before minore del prodotto font-size per line-height(naturale del bottone)
+avrei dovuto dare line-height in px al button pari all'height del before per centrare img google in verticale
+Questo perché il bottone è costruito col padding a partire dal contenuto.*/
 /* nav */
-.my-form h5{padding-top: 5px;}
 
 /* immagini */
 
@@ -145,22 +150,18 @@ avrei dovuto dare lineheight al button pari all'height del before per centrare i
 }
 
 .deploy ul{
-  margin-top:40px;
   margin-bottom:20px;
 }
 
-.deploy a{
-  color:#455780;
-}
-
 .deploy ul li{
-  font-weight: lighter;
-  line-height: 3;
+  line-height:3;
 }
 .deploy ul li a{
-  padding:15px 15px;
+  padding:20px 15px;
   border-left: 2px solid #ccc;
   text-decoration: none;
+  font-size: 20px;
+  color:#455780;
 }
 
 .deploy ul li a:hover {
@@ -168,10 +169,11 @@ avrei dovuto dare lineheight al button pari all'height del before per centrare i
   color:blue;
   font-weight: 400;
 }
-.deploy .normal-text{
-  padding-bottom:25px;
-  padding-top:5px;
+.deploy .sub-text{
+  padding-bottom:50px;
+  padding-top:8px;
 }
+
 /* .carousel-up e down */
 .carousel-up,.carousel-down,.immagini{
   background-color: #f1f3f8;
@@ -195,9 +197,8 @@ avrei dovuto dare lineheight al button pari all'height del before per centrare i
 }
 
 .carousel-up h5{
-  font-size: 22px;
+  font-size: 18px;
   padding-top:10px;
-  padding-bottom: 50px;
 }
 
 .carousel-content{
@@ -290,6 +291,7 @@ icona cerchio pieno e cerchio vuoto di fontawesome) */
 .gradient h3{
   font-weight:500;
   padding-bottom:5px;
+  font-size: 35px;
 }
 .test-speed{
   width:100%;
@@ -315,7 +317,6 @@ icona cerchio pieno e cerchio vuoto di fontawesome) */
   position:relative;
   padding:50px 0;
   background-color: #08154f;
-  color:white;
 }
 
 .footer .iconasito{
@@ -355,7 +356,7 @@ icona cerchio pieno e cerchio vuoto di fontawesome) */
   display:inline-block;
   vertical-align: middle;
   position: relative;
-  background: #ffffff;
+  background: #fff;
   color: #000;
   font-size: 15px;
   line-height: 1.2;
@@ -375,7 +376,7 @@ icona cerchio pieno e cerchio vuoto di fontawesome) */
   z-index: 1;
   border-style: solid;
   border-width: 9px 0 0 9px;
-  border-color: transparent transparent transparent #ffffff;
+  border-color: transparent transparent transparent #fff;
   top: 70%;
   right: -6px;
   margin-top: -9px;
@@ -415,10 +416,9 @@ icona cerchio pieno e cerchio vuoto di fontawesome) */
 
 /* Tablets */
 @media  screen and (min-width : 768px) {
-.carousel-up img,.carousel-content{
+.carousel-up img,.carousel-content,.carousel-content img{
  width:75%;}
-.carousel-content img{
-width:75%;}
+
 .carousel-content p{
   font-size:40px;
 }
@@ -459,7 +459,14 @@ width:75%;}
 .carousel-up p{
   font-size: 25px;
   font-weight: 300;
+  padding-bottom:55px;
 }
+
+.carousel-up ul{
+  padding-top:5px;
+  padding-bottom:0px;
+}
+
 .navbar-right{padding-right: 8px;}
 .shark{
   display:inline-block;

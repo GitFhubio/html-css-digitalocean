@@ -29,10 +29,7 @@ color:#455780;
  padding:0;}
 
 /* codice */
-.container{
-  width:100%;
-  max-width:1170px;
-}
+
 .navbar{
   margin-bottom:0px;
   padding-top:5px;
@@ -461,10 +458,17 @@ line-height: 140%;}
 .navbar-header {
   float:none;
 }
+.container{
+  width:100%;
+}
 }
 /* Medium Devices, Desktops */
 @media screen and (min-width : 992px) {
-
+.jumbotron h1 {
+  font-size: 60px;}
+.jumbotron .titolo p{
+  font-size: 22px;
+  }
 .immagini img{
   width:15%;
 }

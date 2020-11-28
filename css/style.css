@@ -131,7 +131,7 @@ Questo perché il bottone è costruito col padding a partire dal contenuto.*/
 }
 .immagini img{
   vertical-align:middle;
-  width:250px;
+  width:45%;
   height:auto;
   margin:40px 0;
 }
@@ -416,6 +416,14 @@ icona cerchio pieno e cerchio vuoto di fontawesome) */
 
 /* Tablets */
 @media  screen and (min-width : 768px) {
+
+.immagini img{
+  width:15%;}
+
+.deploy .bis{
+  margin-top:40px;
+}
+
 .carousel-up img,.carousel-content,.carousel-content img{
  width:75%;}
 
@@ -445,9 +453,12 @@ icona cerchio pieno e cerchio vuoto di fontawesome) */
 }
 /* Medium Devices, Desktops */
 @media screen and (min-width : 992px) {
- .immagini img{
- width:145px;}
- .carousel-content{
+
+.immagini img{
+  width:15%;
+}
+
+.carousel-content{
   padding:90px 2px;
 }
 .carousel-content img{

@@ -489,9 +489,11 @@ line-height: 140%;}
   padding-bottom:55px;
 }
 
+.carousel-up h5{
+padding-bottom: 0px;
+}
 .carousel-up ul{
-  padding-top:5px;
-  padding-bottom:0px;
+  padding-top:0px;
 }
 
 .navbar-right{padding-right: 8px;}

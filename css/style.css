@@ -71,6 +71,9 @@ color:#455780;
   margin-bottom:0px;
   background-position: 50% 80%;
   }
+.jumbotron .titolo h1{
+  font-size: 45px;
+  }
 .jumbotron .titolo p{
   font-weight:400;
   opacity:0.7;
@@ -421,8 +424,6 @@ icona cerchio pieno e cerchio vuoto di fontawesome) */
 
 /* Tablets */
 @media  screen and (min-width : 768px) {
-.jumbotron h1 {
-  font-size: 45px;}
 .jumbotron .my-form h5{font-size:15px;
 line-height: 140%;}
 .immagini img{

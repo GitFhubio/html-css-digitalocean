@@ -347,11 +347,13 @@ ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight:
   color: #000;
   font-size: 15px;
   line-height: 1.2;
-  text-align: center;
-  max-width: 300px;
+  text-align: left;
+  max-width: 310px;
   height: 100%;
-  border-radius: 10px;
-  padding: 10px 0;
+  border-radius: 6px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:8px;
   margin-top:20px;
 }
 /* Per creare triangolino */
@@ -362,10 +364,10 @@ ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight:
   width: 0;
   z-index: 1;
   border-style: solid;
-  border-width: 9px 0 0 9px;
+  border-width: 8px 8px 8px 8px;
   border-color: transparent transparent transparent #fff;
-  top: 70%;
-  right: -6px;
+  bottom: 20%;
+  right: -15px;
   margin-top: -9px;
 }
 .shark img{
@@ -487,6 +489,8 @@ font-size:22px;
 .shark{
   display:inline-block;
 }
+.bubble{
+  margin-right: 15px;
 }
 /* Nota riga 116:se avessi messo un height all'img in before minore del prodotto font-size per line-height(naturale del bottone)
 avrei dovuto dare line-height in px al button pari all'height del before per centrare img google in verticale

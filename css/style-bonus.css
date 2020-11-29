@@ -7,8 +7,9 @@ ul{
   list-style: none;
   padding:0;
 }
-
-img{
+img.logo{width:100px;
+height:auto;}
+#myCarousel img{
   margin:0 auto;
 }
 .hamburger-menu{float:right;}

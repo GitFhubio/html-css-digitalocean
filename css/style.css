@@ -198,16 +198,12 @@ color:#455780;
 }
 
 .carousel-content{
-  padding:40px 10px;
-  width:80%;
-  margin:0 auto;
-  background-color: #fff;
-  margin:0 20px;
-}
-
-.carousel-down .left,.carousel-down .right, .carousel-content{
   display:inline-block;
   vertical-align: middle;
+  padding:40px 10px;
+  width:80%;
+  background-color: #fff;
+  margin:0 20px;
 }
 .carousel-down h2{
   padding-top:60px;

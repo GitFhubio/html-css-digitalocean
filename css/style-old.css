@@ -1,9 +1,7 @@
-/* body fontfamily */
+/* Regole css generali */
 body{ font-family: Sailec-Regular,"system-ui",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,"sans-serif";
 font-size:16px;
 }
-/* inizio classi utility */
-
 /* font-style per h-titoli ,2 carousel,deploy e features  */
 .main-text{font-size:40px;
  color:#000043;
@@ -27,12 +25,6 @@ color:#455780;
 /* stile liste */
  ul{list-style: none;
  padding:0;}
-
-/* classi padding */
-.p50-top{padding-top:50px;}
-.p50-bottom{padding-bottom:50px;}
-
-/* fine classi utility */
 
 /* nav */
 
@@ -70,6 +62,7 @@ color:#455780;
 /* jumbotron */
 
 .jumbotron{
+  padding-top:40px;
   background-image: url("../img/sfondo-pesci.svg");
   background-size:cover;
   background-repeat: no-repeat;
@@ -87,7 +80,7 @@ color:#455780;
 .jumbotron .my-form{
   border-radius:5px;
   background-color:#fff;
-  padding:20px 20px;
+  padding:30px 20px;
 }
 .jumbotron .my-form h2{font-weight: 600;
 }
@@ -127,9 +120,10 @@ color:#455780;
 }
 
 /* immagini */
+
 .immagini{
   padding-top:35px;
-  padding-bottom: 35px;
+  padding-bottom:35px;
 }
 .immagini span{
   color:#687596;
@@ -139,12 +133,17 @@ color:#455780;
   margin-top:20px;
 }
 .immagini .loghi img{
+  vertical-align:middle;
   width:40%;
   height:auto;
   margin:40px 20px;
 }
 
 /* deploy */
+.deploy{
+  padding-top:45px;
+  padding-bottom: 45px;
+}
 
 .deploy ul{
   margin-bottom:20px;
@@ -175,7 +174,9 @@ color:#455780;
 .carousel-up,.carousel-down,.immagini{
   background-color: #f1f3f8;
 }
-
+.carousel-up{
+  padding-top:50px;
+}
 .carousel-up p {
   padding-bottom:140px;
   padding-top:20px;
@@ -186,6 +187,7 @@ color:#455780;
   margin:0 20px;
 }
 .carousel-up ul.cerchietti,.carousel-down ul.cerchietti{
+  padding-bottom:50px;
   padding-top:50px;
 }
 
@@ -204,6 +206,7 @@ color:#455780;
   margin:0 20px;
 }
 .carousel-down h2{
+  padding-top:60px;
   padding-bottom: 70px;
 }
 .carousel-down h5{
@@ -245,13 +248,17 @@ icona cerchio pieno e cerchio vuoto di fontawesome) */
 ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight: 900; content: "\f111 ";
 }
 /* features */
-/* .features .row{
-  padding-bottom: 30px;} */
 
+.features{
+  padding-top:50px;
+  padding-bottom:80px;
+}
 .features img{
-  margin-top:20px;}
-/* regions e get-started */
-
+  margin-top:10px;}
+/* gradient e get-started */
+.get-started{
+  padding:50px 0;
+}
 .get-started h3{
   font-size:40px;
 }
@@ -260,11 +267,14 @@ ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight:
   font-weight: 900;
   max-width:100%;
 }
-.regions,.get-started{
+.gradient,.get-started{
   background: linear-gradient(to right, rgba(32,0,156,1) 0%,rgba(33,9,177,1) 50%,rgba(32,0,156,1) 100%);;
 }
-
-.regions h3{
+.gradient{
+  padding-top:30px;
+  padding-bottom:80px;
+}
+.gradient h3{
   font-weight:500;
   padding-bottom:5px;
   font-size: 35px;
@@ -284,12 +294,13 @@ ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight:
 .test-speed a{
   color:#00D0D4;
 }
-.regions .bis{
+.gradient .bis{
   margin-top:20px;
 }
 
 /* footer */
 .footer{
+  padding:50px 0;
   background-color: #08154f;
 }
 
@@ -403,6 +414,9 @@ font-size:22px;
 }
 .deploy .bis{
   margin-top:40px;
+}
+.carousel-up{
+  padding-top:40px;
 }
 .carousel-up img,.carousel-content,.carousel-content img{
   width:75%;}

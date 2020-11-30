@@ -328,15 +328,14 @@ ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight:
 /* codice per fake popovers in fondo al footer */
 .bubble {
   display:none;
-  vertical-align: middle;
-  position: relative;
+  /* vertical-align: middle; */
+  position:absolute;
   background: #fff;
   color: #000;
   font-size: 15px;
   line-height: 1.2;
   text-align: left;
-  max-width: 310px;
-  height: 100%;
+  width: 310px;
   border-radius: 6px;
   padding-top:10px;
   padding-bottom:10px;
@@ -348,7 +347,6 @@ ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight:
   display:none;
   content: '';
   position: absolute;
-  display:block;
   width: 0;
   z-index: 1;
   border-style: solid;
@@ -379,24 +377,17 @@ ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight:
 /* il popover left sarà da mobile,right da tablet in su */
 .popover-left{
   position:fixed;
-  bottom:60px;
-  left:40px;
+  bottom:100px;
+  left:40px;}
+
+.wrapper-chat{
+  position:relative;
 }
-.popover-right .bubble{
-  margin-top:0;
-}
-.popover-right{
-  position:fixed;
-  bottom:30px;
-  right:20px;
-}
+
 .popover-left:hover
-.bubble:after{
+.bubble:after,.popover-left:hover .bubble{
     display:block;
   }
-.popover-left:hover .bubble{
-  display:inline-block;
-}
 
 /* Tablets */
 @media  screen and (min-width : 768px) {
@@ -479,19 +470,27 @@ font-size:22px;
   padding-top:0px;
 }
 .navbar-right{padding-right: 8px;}
-.shark{
-  display:inline-block;
+
+.popover-right{
+  position:fixed;
+  bottom:30px;
+  right:20px;
 }
+
 .bubble{
+  margin-top:0px;
+  position:relative;
   margin-right: 15px;
 }
+.shark{
+display:inline-block;
+}
 .popover-right:hover
-.bubble:after{
-    display:block;
-  }
+.bubble:after{display:block;}
 .popover-right:hover .bubble{
   display:inline-block;
-}
+  vertical-align:middle;}
+
 }
 /* Nota riga 116:se avessi messo un height all'img in before minore del prodotto font-size per line-height(naturale del bottone)
 avrei dovuto dare line-height in px al button pari all'height del before per centrare img google in verticale

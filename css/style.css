@@ -480,17 +480,15 @@ font-size:22px;
 }
 
 .bubble{
-  margin-top:0px;
-  position:relative;
+  margin-top: 0;
+  vertical-align:middle;
   margin-right: 15px;
 }
 .shark{
   display:inline-block;
-  vertical-align:middle;
 }
 .popover-right:hover .bubble { display:inline-block;
-vertical-align:middle;
-
+right:110px;
 }
 .popover-right:hover .bubble:after { display:block;
 }

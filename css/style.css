@@ -327,8 +327,7 @@ ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight:
 }
 /* codice per fake popovers in fondo al footer */
 .bubble {
-  opacity:0;
-  display:inline-block;
+  display:none;
   vertical-align: middle;
   position: relative;
   background: #fff;
@@ -346,7 +345,7 @@ ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight:
 }
 /* Per creare triangolino */
 .bubble:after {
-  opacity:0;
+  display:none;
   content: '';
   position: absolute;
   display:block;
@@ -393,10 +392,10 @@ ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight:
 }
 .popover-left:hover
 .bubble:after{
-    opacity:1;
+    display:block;
   }
 .popover-left:hover .bubble{
-  opacity:1;
+  display:inline-block;
 }
 
 /* Tablets */
@@ -488,10 +487,10 @@ font-size:22px;
 }
 .popover-right:hover
 .bubble:after{
-    opacity:1;
+    display:block;
   }
 .popover-right:hover .bubble{
-  opacity:1;
+  display:inline-block;
 }
 }
 /* Nota riga 116:se avessi messo un height all'img in before minore del prodotto font-size per line-height(naturale del bottone)

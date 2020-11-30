@@ -471,28 +471,28 @@ font-size:22px;
 }
 .navbar-right{padding-right: 8px;}
 
-/* popover left fatto sfruttando display block/none  */
-/* popover right fatto sfruttando l'opacity */
+/* popover fatto sfruttando display block/none */
 
 .popover-right{
   position:fixed;
   bottom:30px;
   right:20px;
 }
-.bubble:after{
-  display:block;
-}
+
 .bubble{
   margin-top:0px;
   position:relative;
   margin-right: 15px;
-  opacity:0;
 }
-.shark,.bubble{
- display:inline-block;
- vertical-align:middle;
+.shark{
+  display:inline-block;
+  vertical-align:middle;
 }
-.popover-right:hover .bubble {opacity:1;
+.popover-right:hover .bubble { display:inline-block;
+vertical-align:middle;
+
+}
+.popover-right:hover .bubble:after { display:block;
 }
 }
 /* Nota riga 124:se avessi messo un height all'img in before minore del prodotto font-size per line-height(naturale del bottone)

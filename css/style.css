@@ -328,6 +328,7 @@ ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight:
 }
 /* codice per fake popovers in fondo al footer */
 .bubble {
+  opacity:0;
   display:inline-block;
   vertical-align: middle;
   position: relative;
@@ -346,6 +347,7 @@ ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight:
 }
 /* Per creare triangolino */
 .bubble:after {
+  opacity:0;
   content: '';
   position: absolute;
   display:block;
@@ -390,6 +392,14 @@ ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight:
   bottom:30px;
   right:20px;
 }
+.popover-left:hover
+.bubble:after{
+    opacity:1;
+  }
+.popover-left:hover .bubble{
+  opacity:1;
+}
+
 /* Tablets */
 @media  screen and (min-width : 768px) {
 .jumbotron .my-form h5{font-size:15px;
@@ -476,6 +486,14 @@ font-size:22px;
 }
 .bubble{
   margin-right: 15px;
+}
+.popover-right:hover
+.bubble:after{
+    opacity:1;
+  }
+.popover-right:hover .bubble{
+  opacity:1;
+}
 }
 /* Nota riga 116:se avessi messo un height all'img in before minore del prodotto font-size per line-height(naturale del bottone)
 avrei dovuto dare line-height in px al button pari all'height del before per centrare img google in verticale

@@ -15,8 +15,8 @@ height:auto;}
   width:auto;
 }
 .hamburger-menu{float:right;}
-.col-md-6:nth-child(2) ul{float:right;}
-.col-md-6:nth-child(2) ul li{
+.navbar .col-md-6:nth-child(2) ul{float:right;}
+.navbar .col-md-6:nth-child(2) ul li{
 text-align: right;}
 .carousel-control.left,.carousel-control.right {
   background-image: linear-gradient(to right,rgba(255,255,255,0.001) 0%,rgba(255,255,255,0.001) 0%);
@@ -34,50 +34,32 @@ text-align: right;}
 .carousel-control:hover{
   color:blue;
 }
-
-.gradient li ul::after{
-  clear:both;
-  display: table;
-  content:"";
-}
-.gradient li ul li{
-  float:left;
-}
 .gradient ul{
   list-style: none;
   padding:0;
 }
-.gradient li ul{
+.gradinet ul:after{
+  display: table;
+  clear:both;
+  content:"";
+}
+.gradient ul li{
+  float:left;
+}
+.gradient ul li:first-child{
+  width:20%;
+}
+.gradient ul li:nth-child(2){
+  width:50%;
+}
+.gradient ul li:nth-child(3){
+  width:30%;
+}
+.gradient ul li {
 border-bottom: 1px solid black;
 }
-.gradient li ul:last-child{
-border-bottom:none;
-}
-.gradient li ul li:first-child{
-width:15%;
-text-align: left;
-}
-.gradient li ul li:nth-child(2){
-width:60%;
-padding-left:5%;
-text-align: left;
-}
-.gradient li ul li:nth-child(3){
-width:25%;
-text-align: right;
-}
-.gradient .liste{
-  margin:0 auto;
-  text-align: center;
-}
-
-@media  screen and (min-width : 768px) {
-  .gradient .lista-sx,.gradient .lista-dx{
-    display:inline-block;
-    width:48%;
-
-  }
-  .gradient .lista-sx{
-    margin-right: 10px;
-  }
+.gradient ul:last-child li {
+border-bottom:none;}
+.gradient .lista-sx{
+  margin-bottom: 20px;
 }

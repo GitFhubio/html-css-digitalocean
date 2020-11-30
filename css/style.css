@@ -34,7 +34,7 @@ color:#455780;
 
 /* fine classi utility */
 
-/* nav */
+/* nav(ho lavorato su quella di bootstrap,nel bonus l'ho costruita da me) */
 
 .navbar{
   margin-bottom:0px;
@@ -170,8 +170,10 @@ color:#455780;
   padding-bottom:50px;
   padding-top:8px;
 }
+/* .carousel-up e down (costruiti qui solo a livello visivo,
+ quelli della versione bonus hanno struttura da veri carousel
+ pensata per il cambio immagine) */
 
-/* .carousel-up e down */
 .carousel-up,.carousel-down,.immagini{
   background-color: #f1f3f8;
 }
@@ -244,9 +246,6 @@ icona cerchio pieno e cerchio vuoto di fontawesome) */
 .circle::before{font-family: FontAwesome ; font-weight: 900; content: "\f1db ";}
 ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight: 900; content: "\f111 ";
 }
-/* features */
-/* .features .row{
-  padding-bottom: 30px;} */
 
 .features img{
   margin-top:20px;}
@@ -378,7 +377,7 @@ ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight:
   border-radius: 50%;
   border:3px solid #fff;
 }
-/* il popover left sarà da mobile,right da tablet-> */
+/* il popover left sarà da mobile,right da tablet in su */
 .popover-left{
   position:fixed;
   bottom:60px;

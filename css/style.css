@@ -328,7 +328,6 @@ ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight:
 /* codice per fake popovers in fondo al footer */
 .bubble {
   display:none;
-  /* vertical-align: middle; */
   position:absolute;
   background: #fff;
   color: #000;
@@ -387,7 +386,7 @@ ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight:
 .popover-left:hover
 .bubble:after,.popover-left:hover .bubble{
     display:block;
-  }
+}
 
 /* Tablets */
 @media  screen and (min-width : 768px) {
@@ -492,7 +491,8 @@ font-size:22px;
  display:inline-block;
  vertical-align:middle;
 }
-.popover-right:hover .bubble {opacity:1;}
+.popover-right:hover .bubble {opacity:1;
+}
 }
 /* Nota riga 124:se avessi messo un height all'img in before minore del prodotto font-size per line-height(naturale del bottone)
 avrei dovuto dare line-height in px al button pari all'height del before per centrare img google in verticale

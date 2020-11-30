@@ -284,7 +284,7 @@ ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight:
   min-height:40px;
   border-bottom:1px solid #fff;
   padding:10px 0;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 .test-speed:last-child{
   border-bottom:none;}

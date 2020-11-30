@@ -300,7 +300,6 @@ ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight:
 
 /* footer */
 .footer{
-  position:relative;
   padding:50px 0;
   background-color: #08154f;
 }
@@ -390,7 +389,7 @@ ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight:
 }
 /* il popover left sarà da mobile,right da tablet-> */
 .popover-left{
-  position:absolute;
+  position:fixed;
   bottom:60px;
   left:40px;
 }
@@ -398,7 +397,7 @@ ul.cerchietti li:hover  .circle::before {font-family: FontAwesome ; font-weight:
   margin-top:0;
 }
 .popover-right{
-  position:absolute;
+  position:fixed;
   bottom:30px;
   right:20px;
 }

@@ -66,6 +66,28 @@ text-align: right;
   text-align: center;
 }
 
+.slider-box{
+  position:relative;
+  height:100%;
+}
+.slider-arrow{
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+}
+
+.slider-inner{width:80%;
+margin:0 auto;}
+
+.slider-arrow-Left,{
+  left:0;
+  right:0;
+}
+.disabled{
+  opacity:0.5;
+}
+
 @media  screen and (min-width : 768px) {
   .gradient .lista-sx,.gradient .lista-dx{
     display:inline-block;

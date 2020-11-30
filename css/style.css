@@ -482,16 +482,16 @@ font-size:22px;
 .bubble{
   margin-top: 0;
   vertical-align:middle;
-}
-.shark{
-  display:inline-block;
-}
-.popover-right:hover .bubble { display:inline-block;
-right:120px;
+  right:120px;
 }
 .popover-right:hover .bubble:after { display:block;
 }
+.shark,.popover-right:hover .bubble{
+  display:inline-block;
 }
-/* Nota riga 124:se avessi messo un height all'img in before minore del prodotto font-size per line-height(naturale del bottone)
+
+}
+/* Nota1 riga 124:se avessi messo un height all'img in before minore del prodotto font-size per line-height(naturale del bottone)
 avrei dovuto dare line-height in px al button pari all'height del before per centrare img google in verticale
 Questo perché il bottone è costruito col padding a partire dal contenuto.*/
+/* Nota2 riga142:non c'è vertical align alle immagini perché è di base in Bootstrap */

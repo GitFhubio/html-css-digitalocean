@@ -482,13 +482,12 @@ font-size:22px;
 .bubble{
   margin-top: 0;
   vertical-align:middle;
-  margin-right: 15px;
 }
 .shark{
   display:inline-block;
 }
 .popover-right:hover .bubble { display:inline-block;
-right:110px;
+right:120px;
 }
 .popover-right:hover .bubble:after { display:block;
 }

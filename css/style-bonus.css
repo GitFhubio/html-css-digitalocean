@@ -97,7 +97,7 @@ width:100%;
 
 
 /* nuova parte con flexbox */
-
+/* nav flexbox */
 .navflex{
   height:200px;
   display:flex;
@@ -146,8 +146,29 @@ display:none;
   padding-right: 20px;
   border:1px solid red;
 }
+/* inizio jumbotron flex */
+.jambotron
+{
+  padding-top:50px;
+  padding-bottom: 50px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.form{
+  width:40%;
+  text-align: center;
+}
+input{
+  width:90%;
+}
+
 
 @media screen and (min-width: 768px) {
+/* media nav flexbox */
+
   .navflex{
     justify-content: space-between;
   }
@@ -182,4 +203,5 @@ display:none;
 .navflex .ul-right li {
   flex-basis: 30px;
 }
+/* media nav flexbox fine */
 }
